@@ -1,0 +1,20 @@
+html
+ head
+  title= "Formula storage"
+  script(src='/js/parser.js')
+  script(src='/js/functions.js')
+  link(rel='stylesheet', href='/css/style.css')
+ body
+  div(class='colContainer')
+   div(class='leftCol')
+    input(type='text', id='scalarInputId', class='textBox')
+    p(class='inlineBlock') =
+    input(type='text', id='scalarInputValue', class='textBox inlineBlock')
+    div(id='addScalarButton', class='addButton') Add Scalar
+    ul(id='scalarvariableList')
+   div(class='midCol')
+    input(type='text', id='equationInputValue', class='textBox')
+    div(id='addEquationButton', class='addButton') Add Equation
+    ul(id='equationList')
+   div(class='rightCol')
+    ul(id='databaseList')
